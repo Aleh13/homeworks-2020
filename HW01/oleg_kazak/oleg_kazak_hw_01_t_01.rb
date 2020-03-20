@@ -9,3 +9,5 @@ def angle_time(hours, minutes)
    minutes_hand = 360 * 1 / 60
 # Clockwise angle
    hour_angle = hour_hand * (minutes + hours * 60)
+# Minute hand angle
+   minutes_angle = minutes_hand * minutes
