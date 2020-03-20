@@ -11,3 +11,8 @@ def angle_time(hours, minutes)
    hour_angle = hour_hand * (minutes + hours * 60)
 # Minute hand angle
    minutes_angle = minutes_hand * minutes
+# The angle between the hour and minute hand
+   (hour_angle - minutes_angle).abs
+end
+
+puts "#{angle_time(hours, minutes)}"
