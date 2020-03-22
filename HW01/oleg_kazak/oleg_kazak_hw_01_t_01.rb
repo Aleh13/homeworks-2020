@@ -3,10 +3,10 @@ hours = gets.to_i
 print 'Enter the value of the minutes hand: '
 minutes = gets.to_i
 def angle_time(hours, minutes)
-  HOUR_HAND = 0.5 * (minutes + hours * 60)
-  MINUTES_HAND = 6 * minutes
+  hour_hand = 0.5 * (minutes + hours * 60)
+  minutes_hand = 6 * minutes
   # The angle between the hour and minute hand
-  (HOUR_HAND - MINUTES_HAND).abs
+  (hour_hand - minutes_hand).abs
 end
 
 puts "The angle is #{angle_time(hours, minutes)}"
